@@ -22,7 +22,6 @@ public class SafeCheckThenAct {
 			System.out.println(Thread.currentThread().getName() + " | Not changed");
 		}
 	}
-
 	
 	public static void main(String[] args) {
 		final SafeCheckThenAct checkAct = new SafeCheckThenAct();
