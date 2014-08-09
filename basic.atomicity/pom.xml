@@ -11,24 +11,10 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<log4j.version>1.2.14</log4j.version>
-		<slf4j.version>1.6.1</slf4j.version>
 		<junit.version>4.9</junit.version>
 	</properties>
 
 	<dependencies>
-		<!-- Logging -->
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
-
 		<!-- Testing -->
 		<dependency>
 			<groupId>junit</groupId>

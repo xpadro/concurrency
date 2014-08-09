@@ -1,7 +1,5 @@
 package atomicity;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Thread-safe number changer.
@@ -13,17 +11,15 @@ import org.slf4j.LoggerFactory;
  *
  */
 public class SafeCheckThenAct {
-	private final Logger logger = LoggerFactory.getLogger(getClass());
-	
 	private int number;
 	
 	public synchronized void changeNumber() {
 		if (number == 0) {
-			logger.info("{} - Changed", Thread.currentThread().getName());
+			System.out.println(Thread.currentThread().getName() + " | Changed");
 			number = -1;
 		}
 		else {
-			logger.info("{} - Not changed", Thread.currentThread().getName());
+			System.out.println(Thread.currentThread().getName() + " | Not changed");
 		}
 	}
 
@@ -31,7 +27,7 @@ public class SafeCheckThenAct {
 	public static void main(String[] args) {
 		final SafeCheckThenAct checkAct = new SafeCheckThenAct();
 		
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 50; i++) {
 			new Thread(new Runnable() {
 				@Override
 				public void run() {
