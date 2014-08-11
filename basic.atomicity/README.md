@@ -8,4 +8,4 @@ This project consists in several examples of how race conditions affect the exec
 
 Please take a look at the article about [Atomicity and race conditions]
 
-[Atomicity and race conditions]:http://xpadro.blogspot.com
+[Atomicity and race conditions]:http://xpadro.blogspot.com/2014/08/java-concurrency-tutorial-atomicity-and.html
