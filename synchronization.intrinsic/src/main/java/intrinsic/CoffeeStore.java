@@ -51,7 +51,7 @@ public class CoffeeStore {
 		System.out.println("Total time: " + totalTime + " ms");
 	}
 	
-	static class Client implements Runnable {
+	private static class Client implements Runnable {
 		private final String name;
 		private final CoffeeStore store;
 		
