@@ -65,7 +65,7 @@ public class CoffeeStore {
 			try {
 				store.buyCoffee(name);
 			} catch (InterruptedException e) {
-				
+				System.out.println("interrupted sale");
 			}
 		}
 	}
