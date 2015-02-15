@@ -48,12 +48,9 @@ public class TryLock {
 		try {
 			LOGGER.info("{}|Lock2 acquired. Trying to acquire lock1...", Thread.currentThread().getName());
 			lock1.lock();
-			try {
-				LOGGER.info("{}|Both locks acquired", Thread.currentThread().getName());
-			} finally {
-				lock1.unlock();
-			}
+			LOGGER.info("{}|Both locks acquired", Thread.currentThread().getName());
 		} finally {
+			lock1.unlock();
 			lock2.unlock();
 		}
 	}
