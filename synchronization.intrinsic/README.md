@@ -4,4 +4,4 @@ This project contains several examples of using Java's built-in locking mechanis
 
 Please take a look at the article about [Intrinsic locks]
 
-[Intrinsic locks]:http://xpadro.blogspot.com.es/2014/09/java-concurrency-tutorial-locking.html
+[Intrinsic locks]:http://xpadro.com/2014/09/java-concurrency-tutorial-locking.html

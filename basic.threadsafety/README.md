@@ -8,4 +8,4 @@ Includes several examples of thread-safe classes. These examples are of the foll
 
 Please take a look at the article about [Thread safety]
 
-[Thread safety]:http://xpadro.blogspot.com.es/2014/08/java-concurrency-tutorial-thread-safe.html
+[Thread safety]:http://xpadro.com/2014/08/java-concurrency-tutorial-thread-safe.html
